@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script defer src="dropdown.js"></script>
+  </head>
+  <body>
+    <!-- navbar ending -->
+    <header class="navigation">
+      <img src="./images/logo.svg" alt="Companylogo" />
+      <nav class="desktop__nav">
+        <ul class="desktop__nav_menu">
+          <li class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button>
+              Features
+              <i
+                ><img src="./images/icon-arrow-down.svg" alt="arrow-menu"
+              /></i>
+            </button>
+
+            <ul class="dropdown-menu">
+              <li>
+                <figure>
+                  <i><img src="./images/icon-todo.svg" alt="todo icon" /></i>
+                </figure>
+                Todo List
+              </li>
+              <li>
+                <figure>
+                  <i
+                    ><img src="./images/icon-calendar.svg" alt="calendar icon"
+                  /></i>
+                </figure>
+                Calendar
+              </li>
+              <li>
+                <figure>
+                  <i
+                    ><img
+                      src="./images/icon-reminders.svg"
+                      alt="reminder icon"
+                      id="reminder"
+                  /></i>
+                </figure>
+                Reminders
+              </li>
+              <li>
+                <figure>
+                  <i
+                    ><img src="./images/icon-planning.svg" alt="planning icon"
+                  /></i>
+                </figure>
+                Planning
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button>
+              Company
+              <i><img src="./images/icon-arrow-down.svg" alt="arrow-menu" /></i>
+            </button>
+
+            <ul class="dropdown-menu">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <div class="desktop__nav_btns">
+          <button>Login</button>
+          <button>Register</button>
+        </div>
+      </nav>
+      <div class="navigation__mobile">
+        <figure id="open_mobile">
+          <img src="./images/icon-menu.svg" alt="mobile menu" />
+        </figure>
+
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <figure id="close_mobile">
+              <img src="./images/icon-close-menu.svg" alt="close mobile menu" />
+            </figure>
+            <ul class="modal_content_menu">
+              <li>
+                <div class="dropdown">
+                  <button class="features">
+                    Features
+                    <i
+                      ><img src="./images/icon-arrow-down.svg" alt="arrow-menu"
+                    /></i>
+                  </button>
+                  <div class="dropdown__content-features" id="feature">
+                    <ul class="dropDown_menu features_dropdown">
+                      <li>
+                        <figure>
+                          <i
+                            ><img src="./images/icon-todo.svg" alt="todo icon"
+                          /></i>
+                        </figure>
+                        Todo List
+                      </li>
+                      <li>
+                        <figure>
+                          <i
+                            ><img
+                              src="./images/icon-calendar.svg"
+                              alt="calendar icon"
+                          /></i>
+                        </figure>
+                        Calendar
+                      </li>
+                      <li>
+                        <figure>
+                          <i
+                            ><img
+                              src="./images/icon-reminders.svg"
+                              alt="reminder icon"
+                              id="reminder"
+                          /></i>
+                        </figure>
+                        Reminders
+                      </li>
+                      <li>
+                        <figure>
+                          <i
+                            ><img
+                              src="./images/icon-planning.svg"
+                              alt="planning icon"
+                          /></i>
+                        </figure>
+                        Planning
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <button class="company">
+                    Company
+                    <i
+                      ><img src="./images/icon-arrow-down.svg" alt="arrow-menu"
+                    /></i>
+                  </button>
+                  <div class="dropdown__content">
+                    <ul class="dropDown_menu">
+                      <li>History</li>
+                      <li>Our Team</li>
+                      <li>Blog</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>Careers</li>
+              <li>About</li>
+            </ul>
+            <div class="buttons-mobile">
+              <button>Login</button>
+              <button>Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- navbar ending -->
+
+    <main class="hero">
+      <figure class="illustration">
+        <img src="./images/image-hero-mobile.png" alt="mobile hero" id="hero__illustration_mobile">
+        <img src="./images/image-hero-desktop.png" alt="mobile hero" id="hero__illustration_desktop">
+      </figure>
+      <article class="hero__text">
+        <h1><span>Make</span> remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, create team rituals,
+          and watch productivity soar.</p>
+          <button>Learn more</button>
+          <footer>
+            <div class="container">
+    
+                  <img src="./images/client-databiz.svg" alt="company logo">
+                  <img src="./images/client-audiophile.svg" alt="company logo">
+                  <img src="./images/client-meet.svg" alt="company logo">
+                  <img src="./images/client-maker.svg" alt="company logo">
+    
+              </div>
+          
+          </footer>
+      </article>
+
+    </main>
+     
+      
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+  <script type="module" src="script.js"></script>
+</html>
